@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="logo-space">
+        <img src="LokaalFNV.jpg" alt="Lokaal FNV logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overons.html">over ons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="card">
+    <h1>Contact</h1>
+    <p>Stuur ons een bericht via onderstaand formulier.</p>
+    <form action="#" method="post">
+      <div style="margin-bottom:12px">
+        <label for="name">Naam</label><br>
+        <input id="name" name="name" type="text" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px">
+      </div>
+      <div style="margin-bottom:12px">
+        <label for="email">E-mail</label><br>
+        <input id="email" name="email" type="email" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px">
+      </div>
+      <div style="margin-bottom:12px">
+        <label for="message">Bericht</label><br>
+        <textarea id="message" name="message" rows="4" style="width:100%;padding:8px;border:1px solid var(--border);border-radius:8px"></textarea>
+      </div>
+      <button type="submit">Verzend</button>
+    </form>
+  </main>
+
+  <footer style="text-align:center;padding:24px;color:var(--muted)">© Lokaal FNV</footer>
+</body>
+</html>
