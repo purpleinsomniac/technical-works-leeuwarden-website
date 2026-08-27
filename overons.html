@@ -66,7 +66,7 @@
   .nav-left{display:flex; align-items:center; gap:44px;}
   .brand{display:flex; align-items:center; gap:10px;}
   .brand img{height:40px; width:auto; display:block;}
-  .navlinks{display:flex; gap:28px; font-size:14px; font-weight:500;}
+  .navlinks{display:flex; gap:36px; font-size:15px; font-weight:500;}
   .navlinks a{position:relative; padding:4px 0; color:var(--ink);}
   .navlinks a.current{color:var(--blue);}
   .navlinks a::after{
@@ -75,18 +75,27 @@
   }
   .navlinks a:hover::after, .navlinks a.current::after{width:100%;}
   .nav-cta{
-    font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.05em;
-    background:var(--ink); color:var(--white); padding:11px 20px;
+    font-size:14px; font-weight:600; text-transform:uppercase; letter-spacing:.05em;
+    background:var(--ink); color:var(--white); padding:13px 24px;
     border:1px solid var(--ink);
     transition:background .2s ease, color .2s ease;
   }
   .nav-cta:hover{background:transparent; color:var(--ink);}
 
   /* ---------- PAGE ---------- */
-  main{position:relative; flex:1; display:flex; align-items:center; padding:90px 0;}
+  main{position:relative; flex:1; padding:90px 0 110px; overflow:hidden;}
   .page-head{padding:40px; max-width:640px; margin:0 auto;}
   .tag{font-size:12px; color:var(--blue); margin-bottom:14px; display:block;}
   .page-head h1{font-size:clamp(34px,5vw,58px); color:var(--ink); text-align:center;}
+  .team-intro{max-width:620px; margin:0 auto 52px; text-align:center; color:#3C4550; font-size:15.5px;}
+  .team-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:2px; background:var(--line); border:1px solid var(--line);}
+  .person-card{background:var(--bg); padding:28px 24px 26px; display:flex; flex-direction:column; min-height:250px;}
+  .person-card .idx{font-size:12px; color:var(--steel);}
+  .person-card h2{font-size:24px; margin:22px 0 4px; color:var(--ink);}
+  .person-card .role{font-size:12px; color:var(--blue); text-transform:uppercase; font-weight:600; letter-spacing:.05em;}
+  .person-card p{font-size:14px; color:#4A525C; margin-top:16px;}
+  .person-card .person-link{margin-top:auto; padding-top:22px; color:var(--blue); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em;}
+  .person-card .person-link:hover{color:var(--ink);}
 
   /* ---------- FOOTER ---------- */
   footer{padding:26px 0; border-top:1px solid var(--line);}
@@ -97,6 +106,13 @@
 
   @media (max-width:820px){
     .navlinks{display:none;}
+      .team-grid{grid-template-columns:repeat(2, 1fr);}
+    }
+    @media (max-width:520px){
+      .wrap{padding:0 20px;}
+      nav{padding:14px 20px;}
+      .page-head{padding:28px 20px;}
+      .team-grid{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -124,6 +140,44 @@
     <div class="page-head bracket">
       <span class="tag mono" style="text-align:center; display:block;">// OVER ONS</span>
       <h1>Over ons</h1>
+    </div>
+    <p class="team-intro">Vier mensen, een gedeelde liefde voor technisch werk dat helder, snel en betrouwbaar aanvoelt.</p>
+    <div class="team-grid">
+      <article class="person-card bracket">
+        <span class="idx mono">01 / TEAM</span>
+        <h2>Ruben</h2>
+        <span class="role">Webdeveloper</span>
+        <p>Ruben bouwt de technische basis en zorgt dat alles soepel blijft werken.</p>
+        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+      </article>
+      <article class="person-card bracket">
+        <span class="idx mono">02 / TEAM</span>
+        <h2>Gerben </h2>
+        <span class="role">webdeveloper</span>
+        <p>placeholdertext</p>
+        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+      </article>
+      <article class="person-card bracket">
+        <span class="idx mono">03 / TEAM</span>
+        <h2>Wesley</h2>
+        <span class="role">webdeveloper</span>
+        <p>placeholdertext</p>
+        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+      </article>
+      <article class="person-card bracket">
+        <span class="idx mono">04 / TEAM</span>
+        <h2>Ray</h2>
+        <span class="role">webdeveloper</span>
+        <p>placeholdertext</p>
+        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+      </article>
+      <article class="person-card bracket">
+        <span class="idx mono">05 / TEAM</span>
+        <h2>Gilano</h2>
+        <span class="role">webdeveloper</span>
+        <p>placeholdertext</p>
+        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+      </article>
     </div>
   </div>
 </main>
