@@ -94,8 +94,14 @@
   .person-card h2{font-size:24px; margin:22px 0 4px; color:var(--ink);}
   .person-card .role{font-size:12px; color:var(--blue); text-transform:uppercase; font-weight:600; letter-spacing:.05em;}
   .person-card p{font-size:14px; color:#4A525C; margin-top:16px;}
-  .person-card .person-link{margin-top:auto; padding-top:22px; color:var(--blue); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em;}
+  .person-card .person-link{margin-top:auto; padding-top:22px; color:var(--blue); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em; cursor:pointer; display:inline-flex; align-items:center; gap:8px;}
   .person-card .person-link:hover{color:var(--ink);}
+  .person-card .person-link .arrow{transition:transform .2s ease;}
+  .person-card.is-open .person-link .arrow{transform:rotate(90deg);}
+  .portfolio-panel{display:none; margin-top:18px; padding:20px; border:1px solid var(--line); background:rgba(255,255,255,0.38); min-height:120px;}
+  .person-card.is-open .portfolio-panel{display:block;}
+  .portfolio-placeholder{width:100%; min-height:80px; border:1px dashed rgba(30,85,157,0.35); background:rgba(30,85,157,0.02); display:flex; align-items:center; justify-content:center; color:var(--steel); font-size:13px; text-transform:uppercase; letter-spacing:.08em; text-align:center; padding:16px;}
+  .person-card.is-open{box-shadow:inset 0 0 0 1px rgba(30,85,157,0.1);}
 
   /* ---------- FOOTER ---------- */
   footer{padding:26px 0; border-top:1px solid var(--line);}
@@ -148,35 +154,65 @@
         <h2>Ruben</h2>
         <span class="role">Webdeveloper</span>
         <p>Ruben bouwt de technische basis en zorgt dat alles soepel blijft werken.</p>
-        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+        <a class="person-link" href="#" aria-expanded="false">
+          <span>bekijk portfolio</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <div class="portfolio-panel" aria-live="polite">
+          <div class="portfolio-placeholder">Portfolio</div>
+        </div>
       </article>
       <article class="person-card bracket">
         <span class="idx mono">02 / TEAM</span>
         <h2>Gerben </h2>
         <span class="role">webdeveloper</span>
         <p>placeholdertext</p>
-        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+        <a class="person-link" href="#" aria-expanded="false">
+          <span>bekijk portfolio</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <div class="portfolio-panel" aria-live="polite">
+          <div class="portfolio-placeholder">Portfolio</div>
+        </div>
       </article>
       <article class="person-card bracket">
         <span class="idx mono">03 / TEAM</span>
         <h2>Wesley</h2>
         <span class="role">webdeveloper</span>
         <p>placeholdertext</p>
-        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+        <a class="person-link" href="#" aria-expanded="false">
+          <span>bekijk portfolio</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <div class="portfolio-panel" aria-live="polite">
+          <div class="portfolio-placeholder">Portfolio</div>
+        </div>
       </article>
       <article class="person-card bracket">
         <span class="idx mono">04 / TEAM</span>
         <h2>Ray</h2>
         <span class="role">webdeveloper</span>
         <p>placeholdertext</p>
-        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+        <a class="person-link" href="#" aria-expanded="false">
+          <span>bekijk portfolio</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <div class="portfolio-panel" aria-live="polite">
+          <div class="portfolio-placeholder">Portfolio</div>
+        </div>
       </article>
       <article class="person-card bracket">
         <span class="idx mono">05 / TEAM</span>
         <h2>Gilano</h2>
         <span class="role">webdeveloper</span>
         <p>placeholdertext</p>
-        <a class="person-link" href="contact.html">portfolio &rarr;</a>
+        <a class="person-link" href="#" aria-expanded="false">
+          <span>bekijk portfolio</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <div class="portfolio-panel" aria-live="polite">
+          <div class="portfolio-placeholder">Portfolio</div>
+        </div>
       </article>
     </div>
   </div>
@@ -188,6 +224,19 @@
     <span class="mono">TECHNICAL WORKS — LEEUWARDEN</span>
   </div>
 </footer>
+
+<script>
+  const portfolioLinks = document.querySelectorAll('.person-link');
+
+  portfolioLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const card = link.closest('.person-card');
+      const isOpen = card.classList.toggle('is-open');
+      link.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
+</script>
 
 </body>
 </html>
