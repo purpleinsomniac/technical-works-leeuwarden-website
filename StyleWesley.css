@@ -44,7 +44,7 @@ nav {
   min-height: 86px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 24px;
 }
 
@@ -60,6 +60,25 @@ nav div {
 /* Verandert de kleur van links als je er met de muis overheen gaat */
 nav a:hover {
   color: #66b7ff;
+}
+
+/* Compacte taalkeuze in de navigatie */
+.language-switcher {
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid #315277;
+  border-radius: 8px;
+  color: #8da9c7;
+}
+
+.language-switcher a {
+  color: #b9cce0;
+}
+
+.language-switcher a.active {
+  color: #fff;
+  font-weight: 800;
 }
 
 /* Eerste grote introblok met tekst links en foto rechts */
@@ -136,6 +155,38 @@ p {
 /* Maakt de knop donkerder bij hover */
 .btn:hover {
   background: #071a33;
+}
+
+/* Zet de socialmediaknoppen onder de portfolioknop */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Geeft de socialmediaknoppen dezelfde stijl en lijnt de logo's uit */
+.social-links .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 0;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Formaat en kleur van de GitHub- en LinkedIn-logo's */
+.social-links .btn svg {
+  display: block;
+  width: 13px !important;
+  min-width: 13px;
+  max-width: 13px;
+  height: 13px !important;
+  min-height: 13px;
+  max-height: 13px;
+  flex: 0 0 13px;
+  fill: currentColor;
 }
 
 /* Stijl voor de profielfoto */
@@ -249,6 +300,11 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 14px;
+  }
+
+  nav .language-switcher {
+    flex-direction: row;
+    width: auto;
   }
 
   .hero {
