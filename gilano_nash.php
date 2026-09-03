@@ -321,12 +321,12 @@
       <div class="nav-left">
         <div class="brand"><img src="logo.png" alt="Technical Works Leeuwarden logo"></div>
         <div class="navlinks">
-          <a href="index.html">Home</a>
-          <a href="overons.html" class="current">Over ons</a>
-          <a href="contact.html">Contact</a>
+          <a href="index.php">Home</a>
+          <a href="overons.php" class="current">Over ons</a>
+          <a href="contact.php">Contact</a>
         </div>
       </div>
-      <a href="contact.html" class="nav-cta">Neem contact op</a>
+      <a href="contact.php" class="nav-cta">Neem contact op</a>
     </nav>
   </header>
 
@@ -355,8 +355,8 @@
       </section>
 
       <div class="portfolio-actions">
-        <a href="contact.html" class="button primary">Bespreek een project</a>
-        <a href="overons.html" class="button">Terug naar team</a>
+        <a href="contact.php" class="button primary">Bespreek een project</a>
+        <a href="overons.php" class="button">Terug naar team</a>
         <a href="https://github.com/GilanoNash" class="button" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://gilanonash.github.io/portfolio-Gilano-Nash/" class="button" target="_blank"
           rel="noopener noreferrer">persoonlijke website</a>

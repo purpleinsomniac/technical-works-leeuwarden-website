@@ -21,6 +21,7 @@ $fonts_url = "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;7
 
   <?php
   // ===== HEADER =====
+  
   include 'handeling/header.php';
 
   // ===== HERO SECTIE =====
@@ -40,8 +41,8 @@ $fonts_url = "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;7
         <p>Technical Works bouwt websites en webapplicaties voor bedrijven in Leeuwarden en omgeving. Vakwerk, duidelijke
           afspraken, geen verrassingen.</p>
         <div class="hero-actions">
-          <a href="contact.html" class="btn-primary">Neem contact op</a>
-          <a href="overons.html" class="btn-secondary">Over ons</a>
+          <a href="contact.php" class="btn-primary">Neem contact op</a>
+          <a href="overons.php" class="btn-secondary">Over ons</a>
         </div>
       </div>
     </section>
