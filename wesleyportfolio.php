@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Wesley — Technical Works Leeuwarden</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="Wesleyportfolio-style.php">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Wesley — Technical Works Leeuwarden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link href="./CSS/portfolio.css" rel="stylesheet">
 </head>
+
 <body>
-<header>
-  <nav>
-    <div class="nav-left">
-      <div class="brand"><img src="logo.png" alt="Technical Works Leeuwarden logo"></div>
-      <div class="navlinks">
-        <a href="index.php">Home</a>
-        <a href="overons.php" class="current">Over ons</a>
-        <a href="contact.php">Contact</a>
+  <?php include 'handeling/header.php'; ?>
+
+  <main>
+    <div class="grid-bg"></div>
+    <div class="wrap">
+      <section class="portfolio-head bracket">
+        <span class="tag mono">// PORTFOLIO / WESLEY</span>
+        <h1>Werk van Wesley</h1>
+        <p>Scrum Master met aandacht voor samenwerking, overzicht en teams die samen goed resultaat leveren.</p>
+      </section>
+
+      <section class="text-box bracket" aria-label="Over Wesley">
+        <span class="box-label mono">03 / WESLEY</span>
+        <h2>Scrum Master met oog voor samenwerking</h2>
+        <p>Ik help teams om overzicht te houden, helder samen te werken en stap voor stap sterke digitale projecten op
+          te leveren.</p>
+        <p>Door doelen duidelijk te maken en obstakels snel zichtbaar te maken, zorg ik voor een rustige werkwijze
+          waarin iedereen zijn bijdrage kan leveren.</p>
+      </section>
+
+      <div class="portfolio-actions">
+        <a href="contact.php" class="button primary">Bespreek een project</a>
+        <a href="overons.php" class="button">Terug naar team</a>
+        <a href="https://github.com/Wesley058" class="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="wesley_website/WesleyPagina.php" class="button" target="_blank" rel="noopener noreferrer">persoonlijke
+          website</a>
       </div>
     </div>
-    <a href="contact.php" class="nav-cta">Neem contact op</a>
-  </nav>
-</header>
+  </main>
 
-<main>
-  <div class="grid-bg"></div>
-  <div class="wrap">
-    <section class="portfolio-head bracket">
-      <span class="tag mono">// PORTFOLIO / WESLEY</span>
-      <h1>Werk van Wesley</h1>
-      <p>Scrum Master met aandacht voor samenwerking, overzicht en teams die samen goed resultaat leveren.</p>
-    </section>
-
-    <section class="text-box bracket" aria-label="Over Wesley">
-      <span class="box-label mono">03 / WESLEY</span>
-      <h2>Scrum Master met oog voor samenwerking</h2>
-      <p>Ik help teams om overzicht te houden, helder samen te werken en stap voor stap sterke digitale projecten op te leveren.</p>
-      <p>Door doelen duidelijk te maken en obstakels snel zichtbaar te maken, zorg ik voor een rustige werkwijze waarin iedereen zijn bijdrage kan leveren.</p>
-    </section>
-
-    <div class="portfolio-actions">
-      <a href="contact.php" class="button primary">Bespreek een project</a>
-      <a href="overons.php" class="button">Terug naar team</a>
-      <a href="https://github.com/Wesley058" class="button" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="WesleyPagina.php" class="button" target="_blank" rel="noopener noreferrer">persoonlijke website</a>
-    </div>
-  </div>
-</main>
-
-<footer>
-  <div class="wrap">
-    <span>&copy; 2026 Technical Works Leeuwarden</span>
-    <span class="mono">TECHNICAL WORKS — LEEUWARDEN</span>
-  </div>
-</footer>
+  <?php include 'handeling/footer.php'; ?>
 </body>
+
 </html>

@@ -14,7 +14,10 @@
 
 <body>
 
-  <?php include 'handeling/header.php'; ?>
+  <?php
+  $page = "over ons";
+  include 'handeling/header.php';
+  ?>
 
   <main>
     <div class="grid-bg"></div>
@@ -45,7 +48,7 @@
           <h2>Wesley</h2>
           <span class="role">scrum master</span>
           <p>Coachen van het team Helpen van teamleden om zelfstandig te werken en goed samen te werken.</p>
-          <a class="person-link" href="gerbenportfolio.php">portfolio &rarr;</a>
+          <a class="person-link" href="wesleyportfolio.php">portfolio &rarr;</a>
         </article>
         <article class="person-card bracket">
           <span class="idx mono">04 / TEAM</span>
@@ -58,19 +61,12 @@
     </div>
   </main>
 
-  <?php
-  // ===== FOOTER =====
-  
-  function renderFooter()
-  { ?>
 
-    <?php include 'handeling/footer.php'; ?>
+  <!-- // ===== FOOTER ===== -->
 
-  <?php }
 
-  // Render alle secties
-  renderFooter();
-  ?>
+  <?php include 'handeling/footer.php'; ?>
+
 
 </body>
 

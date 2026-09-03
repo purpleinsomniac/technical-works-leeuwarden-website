@@ -22,6 +22,8 @@ $fonts_url = "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;7
   <?php
   // ===== HEADER =====
   
+
+  $page = "home";
   include 'handeling/header.php';
 
   // ===== HERO SECTIE =====

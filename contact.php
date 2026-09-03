@@ -14,7 +14,10 @@
 
 <body>
 
-  <?php include 'handeling/header.php'; ?>
+  <?php
+  $page = "contact";
+  include 'handeling/header.php';
+  ?>
 
   <main>
     <div class="grid-bg"></div>
@@ -47,19 +50,14 @@
       </section>
     </div>
   </main>
-  <?php
-  // ===== FOOTER =====
-  
-  function renderFooter()
-  { ?>
 
-    <?php include 'handeling/footer.php'; ?>
+  <!-- ===== FOOTER ===== -->
 
-  <?php }
 
-  // Render alle secties
-  renderFooter();
-  ?>
+
+  <?php include 'handeling/footer.php'; ?>
+
+
 
 </body>
 

@@ -1,13 +1,21 @@
+<?php if (isset($page)) {
+} else {
+    $page = "";
+} ?>
+
 <header>
     <nav>
         <div class="nav-left">
-            <div class="brand"><img src="logo.png" alt="Technical Works logo"></div>
+            <div class="brand"><img src="image/logo.png" alt="Technical Works logo"></div>
             <div class="navlinks">
-                <a href="index.php" class="current">Home</a>
-                <a href="overons.php">Over ons</a>
-                <a href="contact.php">Contact</a>
+                <a href="index.php" <?php if ($page == "home")
+                    echo "class=\"current\""; ?>>Home</a>
+                <a href="overons.php" <?php if ($page == "over ons")
+                    echo "class=\"current\""; ?>>Over ons</a>
+                <a href="contact.php" <?php if ($page == "contact")
+                    echo "class=\"current\""; ?>>Contact</a>
             </div>
         </div>
-        <a href="contact.html" class="nav-cta">Neem contact op</a>
+        <a href="contact.php" class="nav-cta">Neem contact op</a>
     </nav>
 </header>
