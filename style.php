@@ -1,3 +1,4 @@
+<?php header('Content-Type: text/css; charset=UTF-8'); ?>
 /* Theme variables: colors and shared tokens used across the site */
 :root {
   --bg: #f4f1ea;

@@ -217,12 +217,12 @@
         <img src="logo.png" alt="Technical Works Leeuwarden logo">
       </div>
       <div class="navlinks">
-        <a href="index.html" class="current">Home</a>
-        <a href="overons.html">Over ons</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.php" class="current">Home</a>
+        <a href="overons.php">Over ons</a>
+        <a href="contact.php">Contact</a>
       </div>
     </div>
-    <a href="contact.html" class="nav-cta">Neem contact op</a>
+    <a href="contact.php" class="nav-cta">Neem contact op</a>
   </nav>
 </header>
 
@@ -239,8 +239,8 @@
     <h1>Technisch werk<br>dat gewoon <span>klopt</span>.</h1>
     <p>Technical Works bouwt websites en webapplicaties voor bedrijven in Leeuwarden en omgeving. Vakwerk, duidelijke afspraken, geen verrassingen.</p>
     <div class="hero-actions">
-      <a href="contact.html" class="btn-primary">Neem contact op</a>
-      <a href="overons.html" class="btn-secondary">Over ons</a>
+      <a href="contact.php" class="btn-primary">Neem contact op</a>
+      <a href="overons.php" class="btn-secondary">Over ons</a>
     </div>
   </div>
 </section>

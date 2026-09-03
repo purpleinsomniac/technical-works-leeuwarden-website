@@ -88,7 +88,21 @@
   .tag{font-size:12px; color:var(--blue); margin-bottom:14px; display:block;}
   .page-head h1{font-size:clamp(34px,5vw,58px); color:var(--ink); text-align:center;}
   .team-intro{max-width:620px; margin:0 auto 52px; text-align:center; color:#3C4550; font-size:15.5px;}
-  .team-grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:2px; background:var(--line); border:1px solid var(--line);}
+
+  /* FIX: explicit grid placement so cards can never drift into the wrong column/row */
+  .team-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-auto-rows:1fr;
+    gap:2px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .person-card:nth-child(1){grid-column:1; grid-row:1;}
+  .person-card:nth-child(2){grid-column:2; grid-row:1;}
+  .person-card:nth-child(3){grid-column:1; grid-row:2;}
+  .person-card:nth-child(4){grid-column:2; grid-row:2;}
+
   .person-card{background:var(--bg); padding:28px 24px 26px; display:flex; flex-direction:column; min-height:250px;}
   .person-card .idx{font-size:12px; color:var(--steel);}
   .person-card h2{font-size:24px; margin:22px 0 4px; color:var(--ink);}
@@ -113,6 +127,10 @@
       nav{padding:14px 20px;}
       .page-head{padding:28px 20px;}
       .team-grid{grid-template-columns:1fr;}
+      .person-card:nth-child(1),
+      .person-card:nth-child(2),
+      .person-card:nth-child(3),
+      .person-card:nth-child(4){grid-column:1; grid-row:auto;}
   }
 </style>
 </head>
@@ -125,12 +143,12 @@
         <img src="logo.png" alt="Technical Works Leeuwarden logo">
       </div>
       <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="index.html" class="current">Over ons</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.php">Home</a>
+        <a href="index.php" class="current">Over ons</a>
+        <a href="contact.php">Contact</a>
       </div>
     </div>
-    <a href="contact.html" class="nav-cta">Neem contact op</a>
+    <a href="contact.php" class="nav-cta">Neem contact op</a>
   </nav>
 </header>
 
@@ -141,51 +159,35 @@
       <span class="tag mono" style="text-align:center; display:block;">// OVER ONS</span>
       <h1>Over ons</h1>
     </div>
-    <p class="team-intro">Vijf mensen, een gedeelde liefde voor technisch werk dat helder, snel en betrouwbaar aanvoelt.</p>
+    <p class="team-intro">Vier mensen, een gedeelde liefde voor technisch werk dat helder, snel en betrouwbaar aanvoelt.</p>
     <div class="team-grid">
       <article class="person-card bracket">
         <span class="idx mono">01 / TEAM</span>
         <h2>Ruben</h2>
         <span class="role">github master</span>
         <p>Ruben bouwt de technische basis en zorgt dat alles soepel blijft werken.</p>
-        <a class="person-link" href="rubenportfolio.html">portfolio &rarr;</a>
+        <a class="person-link" href="rubenportfolio.php">portfolio &rarr;</a>
       </article>
       <article class="person-card bracket">
         <span class="idx mono">02 / TEAM</span>
         <h2>Gerben </h2>
         <span class="role">webdeveloper</span>
         <p>Gerben is de webdeveloper van het team en zorgt voor een goede gebruikerservaring.</p>
-        <a class="person-link" href="gerbenportf
-        
-        
-        
-        
-        
-        
-        
-        
-        olio.html">portfolio &rarr;</a>
+        <a class="person-link" href="gerbenportfolio.php">portfolio &rarr;</a>
       </article>
       <article class="person-card bracket">
         <span class="idx mono">03 / TEAM</span>
         <h2>Wesley</h2>
         <span class="role">scrum master</span>
         <p>Coachen van het team Helpen van teamleden om zelfstandig te werken en goed samen te werken.</p>
-        <a class="person-link" href="wesleyportfolio.html">portfolio &rarr;</a>
+        <a class="person-link" href="gerbenportfolio.php">portfolio &rarr;</a>
       </article>
       <article class="person-card bracket">
         <span class="idx mono">04 / TEAM</span>
-        <h2>Ray</h2>
-        <span class="role">webdeveloper</span>
-        <p>Ray is de webdeveloper van het team en zorgt voor een goede gebruikerservaring.</p>
-        <a class="person-link" href="rayportfolio.html">portfolio &rarr;</a>
-      </article>
-      <article class="person-card bracket">
-        <span class="idx mono">05 / TEAM</span>
         <h2>Gilano</h2>
         <span class="role">webdeveloper</span>
         <p>Gilano kan goed fouten spotten in de code</p>
-        <a class="person-link" href="gilano_nash.html">portfolio &rarr;</a>
+        <a class="person-link" href="gilano_nash.php">portfolio &rarr;</a>
       </article>
     </div>
   </div>
@@ -200,4 +202,3 @@
 
 </body>
 </html>
-

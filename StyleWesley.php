@@ -1,3 +1,4 @@
+<?php header('Content-Type: text/css; charset=UTF-8'); ?>
 /* Zorgt dat padding en borders meetellen in de totale breedte van elementen */
 * {
   box-sizing: border-box;

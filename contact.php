@@ -129,12 +129,12 @@
         <img src="logo.png" alt="Technical Works Leeuwarden logo">
       </div>
       <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="overons.html">Over ons</a>
-        <a href="contact.html" class="current">Contact</a>
+        <a href="index.php">Home</a>
+        <a href="overons.php">Over ons</a>
+        <a href="contact.php" class="current">Contact</a>
       </div>
     </div>
-    <a href="contact.html" class="nav-cta">Neem contact op</a>
+    <a href="contact.php" class="nav-cta">Neem contact op</a>
   </nav>
 </header>
 
