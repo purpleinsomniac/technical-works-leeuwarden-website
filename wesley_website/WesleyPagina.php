@@ -50,7 +50,7 @@ function kaart(string $titel, string $tekst, string $nummer = ''): void
     <title>Portfolio | Wesley</title>
 
     <!-- Laadt de eigen vormgeving. Het versienummer voorkomt dat een oude CSS-versie uit de cache komt. -->
-    <link rel="stylesheet" href="StyleWesley.php?v=3">
+    <link rel="stylesheet" href="StyleWesley.css?v=3">
 
     <!-- Maakt alvast verbinding met Google Fonts en laadt het lettertype Inter. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

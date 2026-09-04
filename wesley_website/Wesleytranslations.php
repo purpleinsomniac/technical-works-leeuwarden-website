@@ -23,7 +23,7 @@ return [
         // Teksten voor het onderdeel over de opleidingskeuze.
         'education_tag' => 'Waarom heb ik deze opleiding gekozen?',
         'education_title' => 'Mijn opleidingskeuze',
-        'education_text' => "Ik heb voor de opleiding Software Development gekozen omdat ik geïnteresseerd ben in ICT, techniek en het maken van software. Ik vind het leuk om problemen op te lossen en ideeën om te zetten in werkende websites en programma's. Tijdens deze opleiding wil ik mijn programmeerkennis verder ontwikkelen en leren samenwerken aan echte projecten.",
+        'education_text' => "Ik heb voor deze opleiding gekozen omdat het mij een interessante en uitdagende opleiding lijkt. Mijn vriendin volgt dezelfde opleiding en daardoor heb ik een paar keer met haar mee kunnen kijken. Zo kreeg ik een beter beeld van wat de opleiding inhoudt en merkte ik dat het mij echt interesseerde. Dat heeft mij uiteindelijk enthousiast gemaakt om zelf ook voor deze opleiding te kiezen..",
 
         // Iedere rij hieronder bevat de titel en beschrijving van één vaardigheidskaart.
         'skills_tag' => 'Waar ben ik goed in?',
@@ -83,8 +83,7 @@ return [
         // Teksten voor het onderdeel over de opleidingskeuze.
         'education_tag' => 'Why did I choose this programme?',
         'education_title' => 'My choice of study',
-        'education_text' => 'I chose the Software Development programme because I am interested in IT, technology and creating software. I enjoy solving problems and turning ideas into working websites and applications. During this programme, I want to further develop my programming skills and learn to collaborate on real projects.',
-
+        'education_text' => 'I chose this course because it seems interesting and challenging to me. My girlfriend is studying the same course, so I have had the opportunity to see what she is working on a few times. This gave me a better idea of what the course is about, and I noticed that I was genuinely interested in it. That eventually made me excited to choose this course myself.',
         // Engelse titels en beschrijvingen van de vaardigheidskaarten.
         'skills_tag' => 'What am I good at?',
         'skills_title' => 'Skills',
