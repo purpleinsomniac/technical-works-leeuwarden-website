@@ -1,5 +1,6 @@
-  /* Kleurvariabelen */
-  :root {
+
+/* Slaat de belangrijkste kleuren op zodat ze opnieuw gebruikt kunnen worden */
+:root {
     --ink: #0A1422;
     --blue: #1E559D;
     --blue-light: #3D7FC9;
@@ -7,62 +8,77 @@
     --bg: #F4F5F7;
     --line: rgba(30, 85, 157, 0.14);
     --white: #FFFFFF;
-  }
+}
 
-  * {
+/* Verwijdert standaard ruimte en maakt afmetingen makkelijker te berekenen */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  html {
+/* Zorgt voor soepel scrollen op de pagina */
+html {
     scroll-behavior: smooth;
-  }
+}
 
-  body {
+/* Bepaalt de algemene opmaak van de pagina */
+body {
     background: var(--bg);
     color: var(--ink);
     font-family: 'Work Sans', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
-  }
+}
 
-  h1,
-  h2,
-  h3 {
+/* Geeft alle koppen dezelfde stijl */
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.02em;
-  }
+}
 
-  .mono {
+/* Geeft tekst een monospace-lettertype */
+.mono {
     font-family: 'JetBrains Mono', monospace;
     letter-spacing: 0.04em;
-  }
+}
 
-  a {
+/* Verwijdert de standaard opmaak van links */
+a {
     color: inherit;
     text-decoration: none;
-  }
+}
 
-  .wrap {
+/* Centreert de inhoud en bepaalt de maximale breedte */
+.wrap {
     max-width: 1160px;
     margin: 0 auto;
     padding: 0 32px;
-  }
+}
 
-  /* Achtergrond rasterpatroon */
-  .grid-bg {
+
+/* ---------- ACHTERGROND ---------- */
+
+/* Maakt een rasterpatroon op de achtergrond */
+.grid-bg {
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-image:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none;
-  }
+}
 
-  /* Decoratieve hoeken */
-  .bracket::before,
-  .bracket::after {
+
+/* ---------- DECORATIEVE HOEKEN ---------- */
+
+/* Maakt twee decoratieve hoeken */
+.bracket::before,
+.bracket::after {
     content: '';
     position: absolute;
     width: 18px;
@@ -70,26 +86,32 @@
     border-color: var(--blue);
     border-style: solid;
     opacity: 0.55;
-  }
+}
 
-  .bracket::before {
+/* Plaatst een hoek linksboven */
+.bracket::before {
     top: -1px;
     left: -1px;
     border-width: 2px 0 0 2px;
-  }
+}
 
-  .bracket::after {
+/* Plaatst een hoek rechtsonder */
+.bracket::after {
     bottom: -1px;
     right: -1px;
     border-width: 0 2px 2px 0;
-  }
+}
 
-  .bracket {
+/* Zorgt dat de hoeken goed geplaatst kunnen worden */
+.bracket {
     position: relative;
-  }
+}
 
-  /* Header navigatie */
-  header {
+
+/* ---------- NAVIGATIE ---------- */
+
+/* Houdt de header altijd bovenaan het scherm */
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -98,52 +120,60 @@
     background: rgba(244, 245, 247, 0.9);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--line);
-  }
+}
 
-  nav {
+/* Zet de onderdelen van de navigatie naast elkaar */
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 14px 32px;
     width: 100%;
-  }
+}
 
-  .nav-left {
+/* Zet het logo en de links naast elkaar */
+.nav-left {
     display: flex;
     align-items: center;
     gap: 44px;
-  }
+}
 
-  .brand {
+/* Lijnt de onderdelen van het logo uit */
+.brand {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+}
 
-  .brand img {
+/* Bepaalt de grootte van het logo */
+.brand img {
     height: 90px;
     width: auto;
     display: block;
-  }
+}
 
-  .navlinks {
+/* Zet de navigatielinks naast elkaar */
+.navlinks {
     display: flex;
     gap: 28px;
     font-size: 14px;
     font-weight: 500;
-  }
+}
 
-  .navlinks a {
+/* Maakt de navigatielinks op */
+.navlinks a {
     position: relative;
     padding: 4px 0;
     color: var(--ink);
-  }
+}
 
-  .navlinks a.current {
+/* Maakt de link van de huidige pagina blauw */
+.navlinks a.current {
     color: var(--blue);
-  }
+}
 
-  .navlinks a::after {
+/* Maakt een lijn onder iedere navigatielink */
+.navlinks a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -152,14 +182,16 @@
     width: 0;
     background: var(--blue);
     transition: width .25s ease;
-  }
+}
 
-  .navlinks a:hover::after,
-  .navlinks a.current::after {
+/* Laat de lijn zien bij hover en op de huidige pagina */
+.navlinks a:hover::after,
+.navlinks a.current::after {
     width: 100%;
-  }
+}
 
-  .nav-cta {
+/* Maakt de contactknop in de navigatie op */
+.nav-cta {
     font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
@@ -169,26 +201,32 @@
     padding: 11px 20px;
     border: 1px solid var(--ink);
     transition: background .2s ease, color .2s ease;
-  }
+}
 
-  .nav-cta:hover {
+/* Verandert de contactknop wanneer je eroverheen gaat */
+.nav-cta:hover {
     background: transparent;
     color: var(--ink);
-  }
+}
 
-  /* Hero sectie */
-  .hero {
+
+/* ---------- HERO SECTIE ---------- */
+
+/* Geeft het bovenste gedeelte van de pagina ruimte */
+.hero {
     position: relative;
     padding: 170px 0 120px;
     overflow: hidden;
-  }
+}
 
-  .hero .wrap {
+/* Zorgt dat de inhoud boven de achtergrond staat */
+.hero .wrap {
     position: relative;
     z-index: 2;
-  }
+}
 
-  .eyebrow {
+/* Maakt de kleine tekst boven de hoofdtitel op */
+.eyebrow {
     font-size: 12px;
     font-weight: 500;
     color: var(--blue);
@@ -196,41 +234,49 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 22px;
-  }
+}
 
-  .eyebrow .dash {
+/* Maakt het kleine blauwe streepje */
+.eyebrow .dash {
     width: 28px;
     height: 1px;
     background: var(--blue);
-  }
+}
 
-  .hero h1 {
+/* Bepaalt de grootte van de hoofdtitel */
+.hero h1 {
     font-size: clamp(40px, 6vw, 76px);
     line-height: 0.98;
     max-width: 820px;
     color: var(--ink);
-  }
+}
 
-  .hero h1 span {
+/* Maakt een deel van de hoofdtitel blauw */
+.hero h1 span {
     color: var(--blue);
-  }
+}
 
-  .hero p {
+/* Maakt de tekst onder de hoofdtitel op */
+.hero p {
     max-width: 520px;
     margin-top: 26px;
     font-size: 17px;
     color: #3C4550;
-  }
+}
 
-  .hero-actions {
+/* Zet de knoppen naast elkaar */
+.hero-actions {
     display: flex;
     gap: 16px;
     margin-top: 40px;
     flex-wrap: wrap;
-  }
+}
 
-  /* Knoppen */
-  .btn-primary {
+
+/* ---------- KNOPPEN ---------- */
+
+/* Maakt de belangrijkste knop blauw */
+.btn-primary {
     background: var(--blue);
     color: var(--white);
     padding: 15px 28px;
@@ -241,13 +287,15 @@
     border: 1px solid var(--blue);
     transition: background .2s ease;
     cursor: pointer;
-  }
+}
 
-  .btn-primary:hover {
+/* Maakt de knop donkerder wanneer je eroverheen gaat */
+.btn-primary:hover {
     background: #164680;
-  }
+}
 
-  .btn-secondary {
+/* Maakt de tweede knop op */
+.btn-secondary {
     padding: 15px 28px;
     font-size: 13px;
     font-weight: 600;
@@ -256,15 +304,19 @@
     border: 1px solid var(--ink);
     transition: all .2s ease;
     cursor: pointer;
-  }
+}
 
-  .btn-secondary:hover {
+/* Maakt de tweede knop donker bij hover */
+.btn-secondary:hover {
     background: var(--ink);
     color: var(--white);
-  }
+}
 
-  /* Zigzag animatie */
-  .zig-wrap {
+
+/* ---------- ZIGZAG ANIMATIE ---------- */
+
+/* Bepaalt de positie en grootte van de SVG */
+.zig-wrap {
     position: absolute;
     right: -20px;
     top: 120px;
@@ -272,115 +324,141 @@
     height: 340px;
     z-index: 1;
     opacity: 0.95;
-  }
+}
 
-  .zig-wrap svg {
+/* Laat de SVG de volledige beschikbare ruimte gebruiken */
+.zig-wrap svg {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .zig-path {
+/* Bepaalt de basisopmaak van de SVG-lijnen */
+.zig-path {
     fill: none;
     stroke-linecap: square;
     stroke-linejoin: miter;
-  }
+}
 
-  .zig-path.t {
+/* Maakt en animeert de T-lijn */
+.zig-path.t {
     stroke: var(--ink);
     stroke-width: 5;
     opacity: .55;
     stroke-dasharray: 420;
     stroke-dashoffset: 420;
     animation: draw 1s ease forwards .3s;
-  }
+}
 
-  .zig-path.w {
+/* Maakt en animeert de W-lijn */
+.zig-path.w {
     stroke: var(--blue-light);
     stroke-width: 4;
     stroke-dasharray: 1050;
     stroke-dashoffset: 1050;
     animation: draw 1.5s ease forwards 1.15s;
-  }
+}
 
-  @keyframes draw {
+/* Laat de SVG-lijnen getekend worden */
+@keyframes draw {
     to {
-      stroke-dashoffset: 0;
+        stroke-dashoffset: 0;
     }
-  }
+}
 
-  /* Secties */
-  section {
+
+/* ---------- SECTIES ---------- */
+
+/* Geeft alle secties ruimte boven en onder */
+section {
     padding: 110px 0;
     position: relative;
-  }
+}
 
-  .section-head {
+/* Bepaalt de breedte en ruimte van een sectietitel */
+.section-head {
     max-width: 600px;
     margin-bottom: 64px;
-  }
+}
 
-  .tag {
+/* Maakt het kleine label boven een sectietitel op */
+.tag {
     font-size: 12px;
     color: var(--blue);
     margin-bottom: 14px;
     display: block;
-  }
+}
 
-  .section-head h2 {
+/* Bepaalt de grootte van de sectietitel */
+.section-head h2 {
     font-size: clamp(28px, 3.6vw, 42px);
     color: var(--ink);
-  }
+}
 
-  .section-head p {
+/* Maakt de tekst onder de sectietitel op */
+.section-head p {
     margin-top: 14px;
     color: #3C4550;
     font-size: 15.5px;
-  }
+}
 
-  /* Diensten grid */
-  .services-grid {
+
+/* ---------- DIENSTEN ---------- */
+
+/* Zet de diensten in twee kolommen */
+.services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2px;
     background: var(--line);
     border: 1px solid var(--line);
-  }
+}
 
-  .service-card {
+/* Maakt iedere dienstenkaart op */
+.service-card {
     background: var(--bg);
     padding: 38px;
     position: relative;
-  }
+}
 
-  .service-card .idx {
+/* Maakt het nummer van de dienst op */
+.service-card .idx {
     font-size: 12px;
     color: var(--steel);
-  }
+}
 
-  .service-card h3 {
+/* Maakt de titel van de dienst op */
+.service-card h3 {
     font-size: 22px;
     margin: 16px 0 12px;
     color: var(--ink);
-  }
+}
 
-  .service-card p {
+/* Maakt de beschrijving van de dienst op */
+.service-card p {
     font-size: 14.5px;
     color: #4A525C;
-  }
+}
 
-  /* Contact sectie */
-  .contact {
+
+/* ---------- CONTACT ---------- */
+
+/* Geeft de contactsectie een donkere achtergrond */
+.contact {
     background: var(--ink);
     color: var(--white);
     position: relative;
     overflow: hidden;
-  }
+}
 
-  .contact .grid-bg {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  }
+/* Maakt het raster in de contactsectie lichter */
+.contact .grid-bg {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
 
-  .contact .wrap {
+/* Zet de inhoud van de contactsectie netjes naast elkaar */
+.contact .wrap {
     position: relative;
     z-index: 2;
     display: flex;
@@ -388,20 +466,25 @@
     flex-wrap: wrap;
     gap: 40px;
     min-height: 180px;
-  }
+}
 
-  .contact h2 {
+/* Bepaalt de grootte van de contacttitel */
+.contact h2 {
     font-size: clamp(30px, 4vw, 50px);
     max-width: 520px;
-  }
+}
 
-  /* Footer */
-  footer {
+
+/* ---------- FOOTER ---------- */
+
+/* Geeft de footer ruimte en een lijn aan de bovenkant */
+footer {
     padding: 26px 0;
     border-top: 1px solid var(--line);
-  }
+}
 
-  footer .wrap {
+/* Zet de onderdelen van de footer naast elkaar */
+footer .wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -409,48 +492,65 @@
     gap: 12px;
     font-size: 12.5px;
     color: var(--steel);
-  }
+}
 
-  /* Animatie inzichtbaarheid */
-  .reveal {
+
+/* ---------- SCROLL ANIMATIE ---------- */
+
+/* Verbergt elementen voordat ze in beeld komen */
+.reveal {
     opacity: 0;
     transform: translateY(18px);
     transition: opacity .6s ease, transform .6s ease;
-  }
+}
 
-  .reveal.in {
+/* Maakt elementen zichtbaar wanneer de class 'in' wordt toegevoegd */
+.reveal.in {
     opacity: 1;
     transform: none;
-  }
+}
 
-  /* Responsief */
-  @media (max-width:820px) {
+
+/* ---------- RESPONSIEF ---------- */
+
+/* Past de website aan voor kleinere schermen */
+@media (max-width: 820px) {
+
+    /* Verbergt de navigatielinks */
     .navlinks {
-      display: none;
+        display: none;
     }
 
+    /* Zet de diensten onder elkaar */
     .services-grid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
+    /* Verbergt de SVG-decoratie */
     .zig-wrap {
-      display: none;
+        display: none;
     }
 
+    /* Lijnt de contactinhoud bovenaan uit */
     .contact .wrap {
-      align-items: flex-start;
+        align-items: flex-start;
     }
-  }
+}
 
-  @media (prefers-reduced-motion:reduce) {
+/* Schakelt animaties uit als de gebruiker minder beweging heeft ingesteld */
+@media (prefers-reduced-motion: reduce) {
+
+    /* Schakelt de SVG-animatie uit */
     .zig-path {
-      animation: none;
-      stroke-dashoffset: 0;
+        animation: none;
+        stroke-dashoffset: 0;
     }
 
+    /* Zorgt dat onderdelen direct zichtbaar zijn */
     .reveal {
-      transition: none;
-      opacity: 1;
-      transform: none;
+        transition: none;
+        opacity: 1;
+        transform: none;
     }
-  }
+}
+
