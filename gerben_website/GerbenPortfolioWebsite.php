@@ -137,6 +137,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
 </head>
 <body>
 
+<!-- Bovenste menu van de website -->
 <header class="nav">
   <div class="container nav-inner">
     <a class="logo" href="#top" style="text-decoration:none;">Gerben<span>.</span></a>
@@ -159,6 +160,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
 </header>
 
 <main id="top">
+  <!-- Eerste deel van de pagina met een korte kennismaking -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="reveal">
@@ -178,6 +180,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
     </div>
   </section>
 
+  <!-- Informatie over Gerben -->
   <section id="about">
     <div class="container reveal">
       <div class="section-head">
@@ -193,6 +196,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
     </div>
   </section>
 
+  <!-- Vaardigheden en talen -->
   <section id="skills">
     <div class="container reveal">
       <div class="section-head"><div><div class="kicker">02</div><h2 data-i18n="skills_title">Vaardigheden</h2></div></div>
@@ -221,6 +225,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
     </div>
   </section>
 
+  <!-- Opleidingen en behaalde diploma's -->
   <section id="education">
     <div class="container reveal">
       <div class="section-head"><div><div class="kicker">03</div><h2 data-i18n="education_title">Opleiding</h2></div></div>
@@ -231,6 +236,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
     </div>
   </section>
 
+  <!-- Werkervaring -->
   <section id="experience">
     <div class="container reveal">
       <div class="section-head"><div><div class="kicker">04</div><h2 data-i18n="experience_title">Werkervaring</h2></div></div>
@@ -240,6 +246,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
     </div>
   </section>
 
+  <!-- Projecten die zijn gemaakt -->
   <section id="projects">
     <div class="container reveal">
       <div class="section-head"><div><div class="kicker">05</div><h2 data-i18n="projects_title">Projecten</h2></div></div>
@@ -255,6 +262,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
     </div>
   </section>
 
+  <!-- Contactgegevens -->
   <section id="contact">
     <div class="container reveal">
       <div class="section-head"><div><div class="kicker">06</div><h2 data-i18n="contact_title">Contact</h2><p class="lead" data-i18n="contact_lead">Interesse in mijn werk of wil je contact opnemen? Je kunt me hier bereiken.</p></div></div>
@@ -271,6 +279,7 @@ footer { border-top:1px solid var(--line); padding:28px 0; color:var(--muted); t
 <footer>© <span id="year"></span> Gerben Harder · <span data-i18n="footer">Portfolio</span></footer>
 
 <script>
+// Teksten voor Nederlands en Engels
 const translations = {
   nl: {
     nav_about:"Over mij", nav_skills:"Vaardigheden", nav_education:"Opleiding", nav_experience:"Ervaring", nav_projects:"Projecten", nav_contact:"Contact",
@@ -281,7 +290,7 @@ const translations = {
     about_text:"Ik ben een MBO-student Software Development bij Firda in Leeuwarden. Ik leer graag nieuwe dingen en vind het leuk om te programmeren en websites of apps te maken. Ik kan goed samenwerken met anderen, maar ook zelfstandig werken. Mijn doel is om meer ervaring op te doen en beter te worden in softwareontwikkeling.",
     skills_title:"Vaardigheden", skills_tech:"Technische vaardigheden", skills_soft:"Soft skills", skills_languages:"Talen",
     skill_teamwork:"Teamwork", skill_solution:"Oplossingsgericht", skill_perseverance:"Doorzettingsvermogen", skill_eager:"Leergierig",
-    lang_nl:"Nederlands", lang_en:"Engels", education_title:"Opleiding", edu_firda:"Opleiding Software Developer · MBO Leeuwarden.",
+    lang_nl:"Nederlands", lang_en:"Engels", education_title:"Opleiding", edu_firda:"Opleiding Software Developer · MBO Leeuwarden. Ik heb voor deze opleiding gekozen door mijn familie, maar ook omdat ik softwareontwikkeling zelf interessant vind. Daarnaast deed ik al veel met Blender, waarvoor ik ook code moest gebruiken.",
     edu_forum:"MAVO diploma behaald. Examen succesvol afgerond.", present:"heden", experience_title:"Werkervaring",
     exp_lidl:"Diverse taken waaronder kassamedewerker en vakkenvuller.", projects_title:"Projecten",
     proj_fnv:"Schoolproject: een website gebouwd voor FNV Heerenveen-Opsterland, met PHP en CSS. Inclusief agenda, contactpagina en nieuwspagina.",
@@ -296,7 +305,7 @@ const translations = {
     about_text:"I am an MBO Software Development student at Firda in Leeuwarden. I enjoy learning new things and like programming and building websites or apps. I work well with others, but I can also work independently. My goal is to gain more experience and improve my software development skills.",
     skills_title:"Skills", skills_tech:"Technical skills", skills_soft:"Soft skills", skills_languages:"Languages",
     skill_teamwork:"Teamwork", skill_solution:"Solution-oriented", skill_perseverance:"Perseverance", skill_eager:"Eager to learn",
-    lang_nl:"Dutch", lang_en:"English", education_title:"Education", edu_firda:"Software Developer program · MBO Leeuwarden.",
+    lang_nl:"Dutch", lang_en:"English", education_title:"Education", edu_firda:"Software Developer program · MBO Leeuwarden. I chose this program partly because of my family, but also because I find software development interesting. I had already worked a lot with Blender, which also required me to use code.",
     edu_forum:"Obtained MAVO diploma. Successfully passed exams.", present:"present", experience_title:"Experience",
     exp_lidl:"Various tasks including cashier and shelf stocking.", projects_title:"Projects",
     proj_fnv:"School project: a website built for FNV Heerenveen-Opsterland, using PHP and CSS. Includes an agenda, contact page and news page.",
@@ -310,6 +319,7 @@ const navLinks = document.getElementById("navLinks");
 const menuToggle = document.getElementById("menuToggle");
 
 function applyLanguage() {
+  // Pas alle teksten aan naar de gekozen taal
   document.documentElement.lang = currentLang;
   langButton.textContent = currentLang === "nl" ? "EN" : "NL";
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -320,11 +330,13 @@ function applyLanguage() {
 }
 
 langButton.addEventListener("click", () => {
+  // Wissel tussen Nederlands en Engels
   currentLang = currentLang === "nl" ? "en" : "nl";
   applyLanguage();
 });
 
 menuToggle.addEventListener("click", () => {
+  // Open of sluit het menu op een klein scherm
   const open = navLinks.classList.toggle("open");
   menuToggle.setAttribute("aria-expanded", String(open));
 });
