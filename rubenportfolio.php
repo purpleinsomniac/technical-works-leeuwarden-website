@@ -68,6 +68,7 @@
 
         <!-- Opent het GitHub-profiel in een nieuw tabblad -->
         <a href="https://github.com/purpleinsomniac" class="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="rubenporfoliopagina.php" class="button">persoonlijke website</a>
       </div>
     </div>
   </main>
