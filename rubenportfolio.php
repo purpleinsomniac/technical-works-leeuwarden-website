@@ -37,6 +37,8 @@
         <a href="contact.php" class="button primary">Bespreek een project</a>
         <a href="overons.php" class="button">Terug naar team</a>
         <a href="https://github.com/purpleinsomniac" class="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="rubenporfolio pagina.php" class="button" target="_blank" rel="noopener noreferrer">persoonlijke
+        website</a>
       </div>
     </div>
   </main>
