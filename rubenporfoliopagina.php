@@ -15,6 +15,9 @@ $tagline = "Overdag werken aan schoolopdrachten, 's avonds eigen projecten bouwe
 // Korte introductie die in het onderdeel 'Over mij' wordt getoond.
 $about = "Ik ben een student informatica en besteed ongeveer net zoveel tijd aan het debuggen van code als aan het verbeteren van mijn uitrusting in het spel dat ik die week speel. Die twee blijken eigenlijk niet zo verschillend te zijn: voor beide zijn geduld, patroonherkenning en een frisse blik nodig. Ik zoek mogelijkheden om die instelling om te zetten in echte software.";
 
+// Motivatie voor het volgen van de opleiding.
+$motivation = "Ik doe deze opleiding omdat code mij interesseert en ik het leuk vind om met code oplossingen te bedenken en te bouwen. Daarnaast doet mijn vader dit werk ook, waardoor ik al vroeg kennis heb gemaakt met deze richting en enthousiast ben geworden om er zelf verder in te groeien.";
+
 // Programmeertalen en hulpmiddelen die als losse labels worden weergegeven.
 $skills = ["Java", "Python", "JavaScript", "PHP", "Git", "SQL", "en meer..."];
 
@@ -278,6 +281,12 @@ $github   = "https://github.com/purpleinsomniac";
         <span><?php echo htmlspecialchars($skill); ?></span>
       <?php endforeach; ?>
     </div>
+  </section>
+
+  <!-- Reden waarom Ruben deze opleiding volgt. -->
+  <section class="motivation">
+    <h2>Waarom doe ik deze opleiding?</h2>
+    <p><?php echo htmlspecialchars($motivation); ?></p>
   </section>
 
   <!-- Overzicht van de projecten waaraan Ruben heeft gewerkt. -->
